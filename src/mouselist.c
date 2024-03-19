@@ -4,7 +4,7 @@
 
 int printAllItems(Item* head) {
 	if (head == NULL) {
-		printf("Error: There is no item you look for!\n");
+		printf("Error: There is no item for you to look for!\n");
 		return EXIT_FAILURE;
 	}
 
@@ -72,6 +72,7 @@ const int getInterface(Item* head, const int search_idProduct) {
 	}
 	return FALSE;
 }
+
 // FIXME: use generics
 const char* getName(Item* head, const int search_idProduct) {
 	Item* current = head;
@@ -82,6 +83,7 @@ const char* getName(Item* head, const int search_idProduct) {
 	}
 	return "UNDEFINED";
 }
+
 // FIXME: use generics
 const uint8_t getByte3(Item* head, const int search_idProduct) {
 	Item* current = head;
@@ -92,6 +94,7 @@ const uint8_t getByte3(Item* head, const int search_idProduct) {
 	}
 	return FALSE;
 }
+
 const int getSize(Item* head) {
 	int length = 0;
 	if (head == NULL) {
@@ -103,6 +106,7 @@ const int getSize(Item* head) {
 	}
 	return length;
 }
+
 const int getNthId(Item* head, int needed) {
 	int nth = 1;
 	if (head == NULL) {
